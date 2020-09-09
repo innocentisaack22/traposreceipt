@@ -1,0 +1,59 @@
+@import 'styles-variables';
+
+@import '~bootstrap/scss/bootstrap-reboot';
+@import '~bootstrap/scss/bootstrap-grid';
+@import 'styles-reset';
+
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+@import 'themes/default-theme.scss';
+@import 'themes/light-theme.scss';
+@import 'themes/black-theme.scss';
+@import 'themes/nature-theme.scss';
+
+@import 'styles-reset.scss-theme';
+@import '../app/app.component.scss-theme';
+@import '../app/shared/big-input/big-input.component.scss-theme';
+@import '../app/static/home/home.component.scss-theme';
+@import '../app/pos/home/home.component.scss-theme';
+
+@import 'styles-auth';
+@import 'utilities/utilities';
+
+@mixin custom-components-theme($theme) {
+  @include konzo-styles-reset-theme($theme);
+  @include konzo-app-component-theme($theme);
+  @include konzo-home-component-theme($theme);
+  @include konzo-big-input-component-theme($theme);
+  @include konzo-pos-home-component-theme($theme);
+}
+
+.default-theme {
+  @include angular-material-theme($konzo-theme);
+  @include custom-components-theme($konzo-theme);
+  @include konzo-styles-auth($konzo-theme);
+}
+
+.light-theme {
+  @include angular-material-theme($konzo-light-theme);
+  @include custom-components-theme($konzo-light-theme);
+  @include konzo-styles-auth($konzo-light-theme);
+}
+
+.black-theme {
+  @include angular-material-theme($konzo-black-theme);
+  @include custom-components-theme($konzo-black-theme);
+  @include konzo-styles-auth($konzo-black-theme);
+}
+
+.nature-theme {
+  @include angular-material-theme($konzo-nature-theme);
+  @include custom-components-theme($konzo-nature-theme);
+  @include konzo-styles-auth($konzo-nature-theme);
+}
+
+mat-spinner{
+  margin: auto;
+}

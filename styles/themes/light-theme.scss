@@ -1,0 +1,9 @@
+$konzo-light-primary: mat-palette($mat-grey, 200, 500, 300);
+$konzo-light-accent: mat-palette($mat-brown, 200);
+$konzo-light-warn: mat-palette($mat-deep-orange, 200);
+
+$konzo-light-theme: mat-light-theme(
+  $konzo-light-primary,
+  $konzo-light-accent,
+  $konzo-light-warn
+);

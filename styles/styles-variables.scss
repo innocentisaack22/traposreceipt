@@ -1,0 +1,55 @@
+@import '~@angular/material/theming';
+
+$toolbar-breakpoint: 600px;
+
+$fa-font-path: '../node_modules/@fortawesome/fontawesome-free-webfonts/webfonts';
+
+$link-hover-decoration: none;
+$label-margin-bottom: 0;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+$success-colors: mat-palette($mat-green, 400);
+$warning-colors: mat-palette($mat-amber, 400);
+
+$gutter: 1rem !default;
+
+//
+// Radius
+//
+$border-radius-base: 2px !default;
+$border-radius-large: 2px !default;
+$border-radius-small: 1px !default;
+
+/*
+//
+// Spacing
+//
+$spacer: 1rem;
+$spacer-x: $spacer;
+$spacer-y: $spacer;
+
+
+
+@for $i from 0 through 3 {
+  $spacers: map-merge(
+    $spacers,
+    (
+      $i: (\
+        x: $spacer-x * $i,
+        y: $spacer-y * $i
+      )
+    )
+  );
+}
+*/
+$spacers: ();
+$border-width: 1px !default;
+
+$app-intro-img: url(../../images/intro.jpg);

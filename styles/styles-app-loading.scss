@@ -1,0 +1,9 @@
+$app-logo-img: url(../../images/logo.png);
+.app-loading {
+  .logo {
+    width: 64px;
+    height: 64px;
+    background: $app-logo-img center center no-repeat;
+    background-size: cover;
+  }
+}

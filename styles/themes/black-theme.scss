@@ -1,0 +1,9 @@
+$konzo-black-primary: mat-palette($mat-grey, 700, 300, 900);
+$konzo-black-accent: mat-palette($mat-blue-grey, 400);
+$konzo-black-warn: mat-palette($mat-red, 500);
+
+$konzo-black-theme: mat-dark-theme(
+  $konzo-black-primary,
+  $konzo-black-accent,
+  $konzo-black-warn
+);

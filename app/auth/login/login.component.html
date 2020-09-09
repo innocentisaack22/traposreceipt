@@ -1,0 +1,34 @@
+<div class="session">
+  <div class="session-content gradient">
+    <div class="session-wrapper">
+      <mat-card>
+        <mat-card-content>
+          <form [formGroup]="form" (ngSubmit)="submit()">
+            <div [ngClass]="routeAnimationsElements" style="text-align: center">
+              <div [routerLink]="['/']" class="auth-logo"></div>
+              <mat-hint>{{ 'konzo.auth.login-long' | translate }}</mat-hint>
+            </div>
+            <div fxLayout="column" fxLayoutAlign="space-around">
+              <mat-spinner *ngIf="loading|async"></mat-spinner>
+              <mat-form-field *ngIf="!(loading|async)" style="width: 100%" [ngClass]="routeAnimationsElements">
+                <input matInput placeholder="{{ 'konzo.auth.username' | translate }}" [formControl]="form.controls['username']">
+                <mat-error *ngIf="form.controls['username'].hasError('required') && form.controls['username'].touched">Username is required.</mat-error>
+              </mat-form-field>
+              <mat-form-field *ngIf="!(loading|async)" style="width: 100%" [ngClass]="routeAnimationsElements">
+                <input matInput type="password" placeholder="{{ 'konzo.auth.password' | translate }}" [formControl]="form.controls['password']">
+                <mat-error *ngIf="form.controls['password'].hasError('required') && form.controls['password'].touched">Password is required.</mat-error>
+              </mat-form-field>
+              <mat-checkbox *ngIf="!(loading|async)" [formControl]="form.controls['remember']" [ngClass]="routeAnimationsElements">{{ 'konzo.auth.stay-logged-in' | translate }}</mat-checkbox>
+              <button mat-raised-button color="primary" type="submit" [disabled]="!form.valid||(loading|async)">{{ 'konzo.auth.login' | translate }}</button>
+            </div>
+            <div class="p-y-1"></div>
+            <div [ngClass]="routeAnimationsElements" fxLayout="row" fxLayoutAlign="space-evenly">
+              <a class="mat-text-muted" [routerLink]="['/session/forgot']">{{ 'konzo.auth.forgot-password' | translate }}</a>&nbsp;&nbsp;&nbsp;&nbsp;
+              <a class="mat-text-muted" [routerLink]="['/session/signup']">{{ 'konzo.auth.sign-up' | translate }}</a>
+            </div>
+          </form>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>

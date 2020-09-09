@@ -1,0 +1,9 @@
+$konzo-nature-primary: mat-palette($mat-brown, 700, 300, 900);
+$konzo-nature-accent: mat-palette($mat-deep-purple, 300);
+$konzo-nature-warn: mat-palette($mat-red, 600);
+
+$konzo-nature-theme: mat-light-theme(
+  $konzo-nature-primary,
+  $konzo-nature-accent,
+  $konzo-nature-warn
+);

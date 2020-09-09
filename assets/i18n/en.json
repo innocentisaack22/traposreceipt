@@ -1,0 +1,48 @@
+{
+  "konzo.owner": "Owner",
+  "konzo.auth.username": "Username",
+  "konzo.auth.password": "Password",
+  "konzo.auth.login": "Login",
+  "konzo.auth.login-long": "Sign in to continue.",
+  "konzo.auth.stay-logged-in": "Stay Logged In",
+  "konzo.auth.forgot-password": "Forgot password?",
+  "konzo.auth.sign-up": "Sign up for a new account.",
+  "konzo.auth.error400": "Invalid username or password",
+  "konzo.auth.error": "An error has occurred",
+  "konzo.menu.about": "About",
+  "konzo.menu.examples": "Examples",
+
+
+  "konzo.menu.pos": "Pos",
+  "konzo.menu.home": "Home",
+  "konzo.text.home": "Home",
+
+  "konzo.menu.login": "Sign in",
+  "konzo.menu.logout": "Logout",
+  "konzo.menu.settings": "Settings",
+
+
+  "konzo.responding.error-field": "This field is required",
+  "konzo.responding.pay-ref": "Payment reference number",
+  "konzo.responding.comments": "Comments",
+
+  "konzo.settings.animations.elements": "Navigation page elements slide up",
+  "konzo.settings.animations.page": "Navigation whole page transition",
+  "konzo.settings.animations.title": "Animations",
+  "konzo.settings.general.language.en": "English",
+  "konzo.settings.general.language.sw": "Swahili",
+  "konzo.settings.general.placeholder": "Language",
+  "konzo.settings.general.title": "General",
+  "konzo.settings.themes.default": "Default",
+  "konzo.settings.themes.dark": "Dark",
+  "konzo.settings.themes.light": "Light",
+  "konzo.settings.themes.nature": "Nature",
+  "konzo.settings.themes.night-mode": "Auto night mode (from 21:00 to 7:00)",
+  "konzo.settings.themes.placeholder": "Color Theme",
+  "konzo.settings.themes.saneago": "",
+  "konzo.settings.themes.sticky-header": "Sticky header",
+  "konzo.settings.themes.title": "Themes",
+  "konzo.settings.title": "Settings",
+  "konzo.title.long": "Pos Desktop",
+  "konzo.title.short": "Pos"
+}
